@@ -63,8 +63,8 @@ penguins.then(function(data) {
     svg.append("text")
         .attr("text-anchor", "middle")
         .attr("transform", "rotate(-90)")
-        .attr("x", -height / 2)
-        .attr("y", -margin.left + 10)
+        .attr("x", height / 2)
+        .attr("y", margin.left + 10)
         .text("Petal Width");
 
     // Add legend
@@ -83,7 +83,7 @@ penguins.then(function(data) {
     legend.append("text")
         .attr("x", width - 24)
         .attr("y", 9)
-        .attr("dy", ".35em")
+        .attr("dy", ".35m")
         .style("text-anchor", "end")
         .text(d => d);
 });
